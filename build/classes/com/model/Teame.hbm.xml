@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping>
+<!-- 
+    Created by the Middlegen Hibernate plugin 2.2
+
+    http://boss.bekk.no/boss/middlegen/
+    http://www.hibernate.org/
+-->
+<class name="com.model.Teame" table="teames" catalog="foreigntea">
+
+    <id
+        name="id"
+        type="java.lang.Integer"
+        column="id"
+    >
+    
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="name"
+        type="java.lang.String"
+        column="name"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="sex"
+        type="java.lang.String"
+        column="sex"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="age"
+        type="int"
+        column="age"
+        not-null="true"
+        length="10"
+    />
+    <property
+        name="tel"
+        type="java.lang.String"
+        column="tel"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="email"
+        type="java.lang.String"
+        column="email"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="position"
+        type="java.lang.String"
+        column="position"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="company"
+        type="java.lang.String"
+        column="company"
+        not-null="true"
+        length="45"
+    />
+    <property
+        name="year"
+        type="int"
+        column="year"
+        not-null="true"
+        length="10"
+    />
+    <property
+        name="time"
+        type="java.lang.String"
+        column="time"
+        not-null="true"
+        length="90"
+    />
+    <property
+        name="teanum"
+        type="java.lang.String"
+        column="teanum"
+        not-null="true"
+        length="45"
+    />
+
+    <!-- Associations -->
+  
+
+</class>
+</hibernate-mapping>
